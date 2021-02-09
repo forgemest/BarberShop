@@ -25,6 +25,7 @@
     <select name="barber" class="form-control" >
 
       <% @barbers.each do |item| %>
+
       <option <%= @barber == item['name'] ? 'selected' : '' %>><%= item['name'] %></option>
       <% end %>
 
